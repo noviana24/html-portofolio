@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Religi Pekalongan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1a5f7a;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/800');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #d35400;
+        }
+
+        /* Destinations Section */
+        .destinations {
+            padding: 5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .card-content p {
+            color: #7f8c8d;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .destinations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Wisata Religi Pekalongan</div>
+            <div class="nav-links">
+                <a href="#beranda">Beranda</a>
+                <a href="#destinasi">Destinasi</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <h1>Jelajahi Pesona Wisata Religi Pekalongan</h1>
+            <img src="https://asset-2.tstatic.net/tribunnews/foto/bank/images/ilustrasi-potret-masjid-agung-al-jami-pekalongan.jpg" alt="">
+            <p>Temukan keindahan dan kedamaian spiritual di kota santri Pekalongan</p>
+            <a href="#destinasi" class="cta-button">Mulai Perjalanan</a>
+        </div>
+    </section>
+
+    <section class="destinations" id="destinasi">
+        <div class="section-title">
+            <h2>Destinasi Populer</h2>
+            <p>Kunjungi tempat-tempat bersejarah dan spiritual di Pekalongan</p>
+        </div>
+
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="/api/placeholder/400/300" alt="Masjid Jami Pekalongan">
+                <div class="card-content">
+                    <h3>Masjid Jami Pekalongan</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvuUvhEebmEUY5EVlHh7GOKFioBfR5ou6_Q&s" alt="">
+                    <p>Masjid bersejarah dengan arsitektur yang memukau, dibangun pada abad ke-19.</p>
+                    <a href="#" class="cta-button">Selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="/api/placeholder/400/300" alt="Makam Habib Ahmad bin Abdullah Thoha">
+                <div class="card-content">
+                    <h3>Makam Habib Ahmad</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEgspLne-K4iKN1qdIisYICx4UeZWmAg7mWIaRfimp0ZEGmAbUzfRLuC628VMP7kR_MQo&usqp=CAU" alt="">
+                    <p>Kompleks pemakaman ulama besar yang menjadi tujuan ziarah dari berbagai daerah.</p>
+                    <a href="#" class="cta-button">Selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="/api/placeholder/400/300" alt="Pesantren Syafi'iyah">
+                <div class="card-content">
+                    <h3>Pesantren Syafi'iyah</h3>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBOifmGanNoXsmCia9tDJXUgwqWyemyQcUeV29kruWph7_LiuicLRPzHD_cjhEpoXyKk-IHfb_AIr1dai19DI682cpN_Sfurfwq1TRyGN1EEwz2Di77FbpGGKsd78xb5dq51dXcF23KbNG/s1600/DSCN0724.JPG" alt="">
+                    <p>Pesantren tertua di Pekalongan yang telah melahirkan banyak ulama dan tokoh nasional.</p>
+                    <a href="#" class="cta-button">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <div class="footer-content">
+            <h3>Wisata Religi Pekalongan</h3>
+            <p>Jelajahi keindahan spiritual dan sejarah Islam di Kota Pekalongan</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
